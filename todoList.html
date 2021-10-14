@@ -25,9 +25,8 @@
       console.log(todos);
     }
 
-    // Rewrite so that second argument is saved to property on object at "position" 
-    function editTodo(position, newTodo) {
-      todos[position] = newTodo;
+    function editTodo(position, editedTodoText) {
+      todos[position].todoText = editedTodoText;
       console.log(todos);
     }
 
