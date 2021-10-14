@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Todo List</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<body>
+  <script>
+    // todos (is not defined, 90%) (undefined)
+    var todos = ['Item 1', 'Item 2', 'Item 3'];
+    // todos (An array with 3 items, 90%) (An array with 3 items)
+
+    console.log(todos);
+    // (expected behaviour) (result)
+    // (an array will be logged to console, 95%) (an array will be logged to console)
+
+    function add(todo) {
+      todos.push(todo);
+      console.log(todos);
+    }
+
+    function editTodo(position, newTodo) {
+      todos[position] = newTodo;
+      console.log(todos);
+    }
+
+    function remove(position) {
+      todos.splice(position, 1);
+      console.log(todos);
+    }
+  </script>
+</body>
