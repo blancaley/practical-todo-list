@@ -7,25 +7,19 @@
   <title>My Todo List</title>
 </head>
 <body>
-  
-</body>
-</html>
-
-<body>
   <script>
-    // todos (is not defined, 90%) (undefined)
+    // Need to rewrite this to use objects rather than strings
     var todos = ['Item 1', 'Item 2', 'Item 3'];
-    // todos (An array with 3 items, 90%) (An array with 3 items)
 
-    console.log(todos);
-    // (expected behaviour) (result)
-    // (an array will be logged to console, 95%) (an array will be logged to console)
+    console.log(todos);    
 
+    // Rewrite so that the argument passed in is saved to a property on an object
     function add(todo) {
       todos.push(todo);
       console.log(todos);
     }
 
+    // Rewrite so that second argument is saved to property on object at "position" 
     function editTodo(position, newTodo) {
       todos[position] = newTodo;
       console.log(todos);
@@ -37,3 +31,4 @@
     }
   </script>
 </body>
+</html>

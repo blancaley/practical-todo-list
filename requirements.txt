@@ -1,3 +1,9 @@
+Version 3
+[] We should initialize the todos variable with objects. 
+[] The add function should add objects.
+[] The edit function should edit objects.
+[] It should have a function to toggle a todo.
+
 Version 2
 [x] It should have a function to add a todo.
 [x] It should have a function to edit a todo.
@@ -9,3 +15,19 @@ Version 1
 [x] It should have a way to add todos (push)
 [x] It should have a way to edit a todo (take element with index and reasign to new value)
 [x] It should have a way to delete a todo (remove with splice)
+
+
+Two ways to structure data, which one should we use?
+
+Option A: Arrays in arrays
+Pros: Compact?
+Cons: Access is not semantic (todosA[0][1]). You have to remember that the first element is a string, and the boolean is second. This is relevant when trying to access data.
+   var todosA = [['Cook', true], ['Study', false]];
+
+Option B: Objects in arrays 
+Pros: Access is easy to read because the property has a name. (todosB[0].completed)
+Cons: Have to repeat the property name for each todo.
+   var todosB = [
+     {todoText: 'Cook', completed: true},
+     {todoText: 'Study', completed: false}
+   ];
