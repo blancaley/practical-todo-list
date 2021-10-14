@@ -8,7 +8,6 @@
 </head>
 <body>
   <script>
-    // Need to rewrite this to use objects rather than strings
     var todos = [
       {todoText: "Item 1", completed: false}, 
       {todoText: "Item 2", completed: false}, 
@@ -17,8 +16,11 @@
 
     console.log(todos);    
 
-    // Rewrite so that the argument passed in is saved to a property on an object
-    function add(todo) {
+    function add(initialTodo) {
+      let todo = {
+        todoText: initialTodo,
+        completed: false
+      };
       todos.push(todo);
       console.log(todos);
     }
